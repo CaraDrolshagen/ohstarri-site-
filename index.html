@@ -60,7 +60,7 @@
     .trial-note{margin-top:14px;font-size:13px;color:var(--muted)}
 
     /* WHO SHE IS */
-    .who{padding:72px 0}
+    .who{padding:48px 0}
     .who .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
     .who-left h2{font-size:clamp(28px,4vw,46px);font-weight:900;line-height:1.05;color:#fff;margin-bottom:4px}
     .who-left .sub12{font-size:clamp(16px,2.5vw,22px);font-weight:900;color:var(--pink);margin-bottom:0}
@@ -69,12 +69,12 @@
     .who-right strong{color:var(--ink);font-weight:600}
 
     /* POSITIONING */
-    .pos{padding:72px 0 8px;text-align:center}
+    .pos{padding:48px 0 8px;text-align:center}
     .pos h2{font-size:clamp(28px,5vw,56px);font-weight:900;line-height:1.0;color:#fff;margin-bottom:12px;max-width:100%}
     .pos p{font-size:clamp(15px,1.8vw,18px);color:var(--muted);max-width:640px;margin:0 auto;line-height:1.6}
 
     /* EXPLORE TILES */
-    .explore{padding:16px 0 72px}
+    .explore{padding:16px 0 48px}
     .explore h2{font-size:clamp(22px,3.5vw,36px);font-weight:900;color:#fff;text-align:center;margin-bottom:40px}
     .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .tile{background:rgba(26,17,64,0.65);border:1px solid rgba(240,234,248,0.08);border-radius:20px;padding:32px 24px;text-align:center;transition:border-color .25s,background .25s}
@@ -84,7 +84,7 @@
     .tile p{font-size:14px;color:var(--muted);line-height:1.6}
 
     /* NO OTHER APP */
-    .noa{padding:72px 0}
+    .noa{padding:48px 0}
     .noa-head{text-align:center;margin-bottom:32px}
     .noa-head h2{font-size:clamp(30px,5.5vw,52px);font-weight:900;color:#fff;line-height:1.05}
     .noa-head h2 em{font-style:normal;color:var(--pink)}
@@ -100,7 +100,7 @@
     .noa-card li::before{content:'\2726';color:var(--gold);font-size:9px;margin-top:3px;flex-shrink:0}
 
     /* DEMO */
-    .demo{padding:72px 0}
+    .demo{padding:48px 0}
     .demo .wrap{display:grid;grid-template-columns:1fr 160px;gap:48px;align-items:center}
     .feat-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 16px}
     .feat-tab{padding:7px 14px;border-radius:100px;font-size:13px;font-weight:700;cursor:pointer;border:1px solid rgba(240,234,248,0.12);background:rgba(240,234,248,0.05);color:rgba(240,234,248,0.45);transition:all .2s}
@@ -115,7 +115,7 @@
     .phone-slide img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 
     /* FEELINGS */
-    .feel{padding:72px 0;text-align:center}
+    .feel{padding:48px 0;text-align:center}
     .feel h2{font-size:clamp(28px,5vw,48px);font-weight:900;color:#fff;margin-bottom:32px}
     .feel h2 em{font-style:normal;color:var(--pink)}
     .feel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
@@ -124,7 +124,7 @@
     .feel-card p{font-size:13px;color:var(--muted);line-height:1.6}
 
     /* QUESTIONS */
-    .qs{padding:72px 0}
+    .qs{padding:48px 0}
     .qs .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
     .qs-left h2{font-size:clamp(28px,4.5vw,48px);font-weight:900;line-height:1.08;color:#fff}
     .qs-left h2 em{font-style:normal;color:var(--pink);display:block}
@@ -135,7 +135,7 @@
     .q .star{color:var(--gold);font-size:11px;flex-shrink:0;margin-top:3px}
 
     /* PRICING */
-    .pricing{padding:72px 0}
+    .pricing{padding:48px 0}
     .pricing-head{text-align:center;margin-bottom:32px}
     .pricing-head h2{font-size:clamp(30px,5.5vw,52px);font-weight:900;color:#fff;line-height:1.1;overflow:visible}
     .pricing-head h2 em{font-style:normal;color:var(--blue);display:block}
@@ -159,7 +159,7 @@
     .btn-block.outline{background:transparent;border:1px solid rgba(240,234,248,0.18);color:var(--ink)}
 
     /* FINAL CTA */
-    .cta-final{padding:80px 24px;text-align:center}
+    .cta-final{padding:56px 24px;text-align:center}
     .cta-final h2{font-size:clamp(40px,8vw,88px);font-weight:900;line-height:1.0;color:#fff;margin-bottom:20px}
     .cta-final h2 em{font-style:normal;color:var(--pink);display:block}
     .cta-final p{color:var(--muted);font-size:18px;margin-bottom:44px}
@@ -186,9 +186,10 @@
 
     /* RESPONSIVE */
     @media(max-width:900px){
-      .who .wrap,.demo .wrap,.qs .wrap{grid-template-columns:1fr;gap:32px}
-      .demo .wrap{justify-items:center}
-      .demo-copy{order:2}
+      .who .wrap,.qs .wrap{grid-template-columns:1fr;gap:32px}
+      .demo .wrap{grid-template-columns:1fr;gap:28px;justify-items:center}
+      .demo-copy{order:1}
+      .phone-wrap{order:2}
       .tiles{grid-template-columns:1fr 1fr}
       .noa-grid{grid-template-columns:1fr}
       .feel-grid{grid-template-columns:1fr 1fr}
@@ -196,18 +197,37 @@
     }
     @media(max-width:600px){
       nav{padding:12px 20px}
-      .nav-founder{display:none}
-      .wrap{padding:0 20px}
-      .who,.noa,.feel,.qs,.pricing,.explore{padding:56px 0}
-      .pos{padding:56px 0}
-      .demo{padding:56px 0 70px}
-      .cta-final{padding:80px 20px}
-      .tiles{grid-template-columns:1fr 1fr;gap:12px}
-      .tile{padding:22px 16px}
-      .noa-card{padding:24px 20px}
-      .feel-grid{grid-template-columns:1fr 1fr}
-      .feel-card{padding:20px 14px}
-      footer{padding:36px 20px}
+      .wrap{padding:0 18px}
+      .hero{padding:100px 18px 64px;text-align:left}
+      .eyebrow{text-align:left}
+      .hero-card{margin:28px 0 0;padding:20px 22px}
+      .hero-ctas{align-items:flex-start}
+      .appstore-btn-lg{padding:10px 22px}
+      .trial-note{text-align:left;font-size:12px}
+      .who,.noa,.feel,.qs,.pricing,.explore{padding:36px 0}
+      .pos{padding:36px 0 6px}
+      .explore{padding:12px 0 36px}
+      .demo{padding:36px 0}
+      .cta-final{padding:48px 18px}
+      .tiles{grid-template-columns:1fr 1fr;gap:10px}
+      .tile{padding:20px 14px}
+      .tile h3{font-size:16px}
+      .noa-card{padding:22px 18px}
+      .noa-card h3{font-size:18px}
+      .feel-grid{grid-template-columns:1fr 1fr;gap:10px}
+      .feel-card{padding:18px 12px}
+      .feel-card h3{font-size:15px}
+      .feel-card p{font-size:12px}
+      .feat-tabs{gap:6px}
+      .feat-tab{font-size:12px;padding:6px 12px}
+      .feat-desc-area{font-size:14px}
+      .qs-left h2{font-size:clamp(24px,7vw,40px)}
+      .q{font-size:14px;padding:13px 16px}
+      .social-row{gap:12px}
+      .social-icon{width:32px;height:32px}
+      footer{padding:32px 18px}
+      .footer-links{gap:14px}
+      .pc{padding:26px 22px}
     }
   </style>
 </head>
